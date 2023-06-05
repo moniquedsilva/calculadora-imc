@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Calculadora de IMC">
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <script type="text/javascript" src="./script/main.js" defer></script>
+  <title>Calculadora IMC</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <main>
+    <article class="container">
+      <h1>Calculadora IMC</h1>
+
+      <div class="input-container">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Insira seu nome" title="Insira seu nome" required>
+        <p class="error-message" id="nomeError" style="visibility: hidden;">Campo obrigatório</p>
+      </div>
+
+      <div class="input-container">
+        <label for="peso">Peso (em kg)</label>
+        <input type="number" id="peso" step="0.01" placeholder="Exemplo: 60.2" title="Insira seu peso" required>
+        <p class="error-message" id="pesoError" style="visibility: hidden;">Campo obrigatório</p>
+      </div>
+
+      <div class="input-container">
+        <label for="altura">Altura (em metros)</label>
+        <input type="number" id="altura" step="0.01" placeholder="Exemplo: 1.70" title="Insira sua altura" required>
+        <p class="error-message" id="alturaError" style="visibility: hidden;">Campo obrigatório</p>
+      </div>
+
+      <div class="button-container">
+        <button id="calculate" onclick="calcularIMC()" class="calculate-button">Calcular</button>
+        <button onclick="LimparCampos()" class="clear-button">Limpar</button>
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>
