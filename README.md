@@ -8,7 +8,7 @@ Repositório da atividade proposta pelo workshop de HTML + CSS + Javascript que 
 - [Live Site URL](https://moniquedsilva.github.io/calculadora-imc/)
 
 ## Built with
-  - Semantic HTML5 markup
+  - HTML5
   - CSS
   - Flexbox
   - Mobile-first workflow
